@@ -3,19 +3,103 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --baseColor: white;
+  --baseBgColor: #1a1a1a;
+  /* --baseColor: #1a1a1a;
+  --baseBgColor: white; */
+  --card-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --secondary-text: #bbbbbb;
+  --highlight-color: #ff9500;
+  --button-bg: #292929;
+  --button-hover: #ff950093;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hashWrapper {
+  width: 100%;
+  font-size: 3rem;
+  line-height: 6rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.hashWrapper span:nth-child(even) {
+  width: auto;
+  margin-left: 3rem;
+}
+
+.hashWrapper span:nth-child(odd) {
+  width: auto;
+  margin-left: 1rem;
+}
+
+.hashWrapper span {
+  display: block;
+  animation: blur both;
+  animation-timeline: view(10% 20%);
+}
+
+@keyframes blur {
+  0% {
+    opacity: 0;
+    filter: blur(3rem);
+  }
+  45%,
+  50% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(3rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .hashWrapper {
+    font-size: 10vw;
+    line-height: 18vw;
+  }
+  .hashWrapper span:nth-child(even) {
+    margin-left: 10rem;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--baseBgColor);
+  color: var(--baseColor);
 }
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+/* Track */
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #fca311;
+  border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* fitnesbanner */

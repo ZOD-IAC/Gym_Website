@@ -1,0 +1,85 @@
+.FootContatiner {
+  height: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+  position: relative;
+  top: 12vh;
+  background: black;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.option label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.option ul {
+  list-style: none;
+  padding: 0;
+}
+
+.option li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contact p {
+  margin: 0.3rem 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.socialIcons span {
+  cursor: pointer;
+}
+
+.socialIcons span:hover {
+  color: #666;
+}
+
+@media (min-width: 768px) {
+}
