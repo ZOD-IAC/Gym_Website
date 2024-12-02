@@ -14,18 +14,18 @@ function Footer() {
       <div className={styles.option}>
         <label>Quick links</label>
         <ul>
-          <Link href="/">
-            <li>Home</li>
-          </Link>
-          <Link href="/About">
-            <li>About</li>
-          </Link>
-          <Link href="/Contact">
-            <li>Contact</li>
-          </Link>
-          <Link href="/More">
-            <li>More</li>
-          </Link>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/About">About</Link>
+          </li>
+          <li>
+            <Link href="/Contact">Contact</Link>
+          </li>
+          <li>
+            <Link href="/More">More</Link>
+          </li>
         </ul>
       </div>
       <div className={styles.contact}>
@@ -37,7 +37,16 @@ function Footer() {
       <div className={styles.social}>
         <label>Follow Us</label>
         <div className={styles.socialIcons}>
-          <span>Instagram</span>
+          <span>
+            <Link
+              href={
+                "https://www.instagram.com/bodymechnixgym?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              }
+              target="_blank"
+            >
+              Instagram
+            </Link>
+          </span>
         </div>
       </div>
     </div>

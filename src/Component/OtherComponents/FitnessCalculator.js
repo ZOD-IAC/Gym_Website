@@ -115,110 +115,128 @@ const FitnessCalculator = () => {
           {(activeTab === "BMI" || activeTab === "Calories") && (
             <>
               <div className={styles.formGroup}>
-                <label>Weight (kg):</label>
-                <input
-                  type="number"
-                  name="weight"
-                  value={inputValues.weight}
-                  onChange={handleInputChange}
-                  required
-                />
+                <label>
+                  Weight (kg):
+                  <input
+                    type="number"
+                    name="weight"
+                    value={inputValues.weight}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
               </div>
               <div className={styles.formGroup}>
-                <label>Height (cm):</label>
-                <input
-                  type="number"
-                  name="height"
-                  value={inputValues.height}
-                  onChange={handleInputChange}
-                  required
-                />
+                <label>
+                  Height (cm):
+                  <input
+                    type="number"
+                    name="height"
+                    value={inputValues.height}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
               </div>
             </>
           )}
           {activeTab === "Calories" && (
             <>
               <div className={styles.formGroup}>
-                <label>Age:</label>
-                <input
-                  type="number"
-                  name="age"
-                  value={inputValues.age}
-                  onChange={handleInputChange}
-                  required
-                />
+                <label>
+                  Age:
+                  <input
+                    type="number"
+                    name="age"
+                    value={inputValues.age}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
               </div>
               <div className={styles.formGroup}>
-                <label>Gender:</label>
-                <select
-                  name="gender"
-                  value={inputValues.gender}
-                  onChange={handleInputChange}
-                  required
-                >
-                  <option value="">Select</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
+                <label>
+                  Gender:
+                  <select
+                    name="gender"
+                    value={inputValues.gender}
+                    onChange={handleInputChange}
+                    required
+                  >
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </label>
               </div>
               <div className={styles.formGroup}>
-                <label>Activity Level:</label>
-                <select
-                  name="activity"
-                  value={inputValues.activity}
-                  onChange={handleInputChange}
-                  required
-                >
-                  <option value="">Select</option>
-                  <option value="1.2">Sedentary</option>
-                  <option value="1.375">Lightly Active</option>
-                  <option value="1.55">Moderately Active</option>
-                  <option value="1.725">Very Active</option>
-                </select>
+                <label>
+                  Activity Level:
+                  <select
+                    name="activity"
+                    value={inputValues.activity}
+                    onChange={handleInputChange}
+                    required
+                  >
+                    <option value="">Select</option>
+                    <option value="1.2">Sedentary</option>
+                    <option value="1.375">Lightly Active</option>
+                    <option value="1.55">Moderately Active</option>
+                    <option value="1.725">Very Active</option>
+                  </select>
+                </label>
               </div>
             </>
           )}
           {activeTab === "BodyFat" && (
             <>
               <div className={styles.formGroup}>
-                <label>Waist (cm):</label>
-                <input
-                  type="number"
-                  name="waist"
-                  value={inputValues.waist}
-                  onChange={handleInputChange}
-                  required
-                />
+                <label>
+                  Waist (cm):
+                  <input
+                    type="number"
+                    name="waist"
+                    value={inputValues.waist}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
               </div>
               <div className={styles.formGroup}>
-                <label>height (cm):</label>
-                <input
-                  type="number"
-                  name="height"
-                  value={inputValues.height}
-                  onChange={handleInputChange}
-                  required
-                />
+                <label>
+                  height (cm):
+                  <input
+                    type="number"
+                    name="height"
+                    value={inputValues.height}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
               </div>
               <div className={styles.formGroup}>
-                <label>Neck (cm):</label>
-                <input
-                  type="number"
-                  name="neck"
-                  value={inputValues.neck}
-                  onChange={handleInputChange}
-                  required
-                />
+                <label>
+                  Neck (cm):
+                  <input
+                    type="number"
+                    name="neck"
+                    value={inputValues.neck}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
               </div>
               {inputValues.gender === "female" && (
                 <div className={styles.formGroup}>
-                  <label>Hip (cm):</label>
-                  <input
-                    type="number"
-                    name="hip"
-                    value={inputValues.hip}
-                    onChange={handleInputChange}
-                  />
+                  <label>
+                    Hip (cm):
+                    <input
+                      type="number"
+                      name="hip"
+                      value={inputValues.hip}
+                      onChange={handleInputChange}
+                    />
+                  </label>
                 </div>
               )}
             </>
