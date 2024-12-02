@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "@/styles/ContactPage/ContactPage.module.css";
 
 function Contact() {
+  const ref = useRef();
+  const handleClick = () => {
+    if (ref) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className={styles.container}>
       <div className={styles.banner}>
@@ -12,11 +18,13 @@ function Contact() {
             journey? We&apos;re here to help you reach your fitness goals.
             Contact us today!
           </p>
-          <button className={styles.ctaButton}>Contact Us</button>
+          <button className={styles.ctaButton} onClick={handleClick}>
+            Contact Us
+          </button>
         </div>
       </div>
 
-      <div className={styles.contactContent}>
+      <div className={styles.contactContent} ref={ref}>
         <div className={styles.contactInfo}>
           <div className={styles.infoItem}>
             <h3>Location</h3>

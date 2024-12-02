@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "@/styles/SecondaryNav/SecondaryNav.module.css";
 import Image from "next/image";
-import sampleImage from "../../../public/bbgIAmge2.jpg";
+import sampleImage from "../../../public/images/Banners/bbgIAmge.jpg";
 
 const exercise = {
   shoulder: [

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "@/styles/indexBlog/IndexBlog.module.css";
-import sampleImage from "../../../public/images/about2.jpg";
+import sampleImage from "../../../public/images/Banners/about2.jpg";
 import Link from "next/link";
 
 function BlogsCard({ data }) {

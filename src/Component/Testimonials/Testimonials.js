@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import ReviewCard from "./ReviewCard";
 import styles from "@/styles/Testimonisals/Testimonisals.module.css";
 

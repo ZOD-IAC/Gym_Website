@@ -161,6 +161,52 @@
   mix-blend-mode: difference;
 }
 
+/* Modal Image */
+.modal_backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  opacity: 0.7;
+  z-index: 10;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  text-align: center;
+}
+
+.modal_image {
+  /* max-width: 100%; */
+  width: 800px;
+  max-height: auto;
+  border-radius: 8px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.close_button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 25;
+  transition: color 0.3s ease;
+}
+
+.close_button:hover {
+  color: #ff6666;
+}
+
 @media (min-width: 768px) {
   .gallery {
     columns: 4;

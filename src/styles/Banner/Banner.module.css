@@ -1,7 +1,7 @@
 .banner {
   width: 100%;
   height: 100vh;
-  background-image: url("../../../public/bbgIAmge.jpg");
+  background-image: url("../../../public/images/Banners/bbgIAmge.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -70,8 +70,8 @@
 }
 
 .ctaButton:hover {
-  background-color: #bd7500;
-  color: #fff;
+  background-color: #d1870f;
+  color: #000;
 }
 
 @media (max-width: 768px) {

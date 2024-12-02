@@ -3,8 +3,7 @@
   background-color: #313131; /* Light background */
   padding: 2rem 1rem;
   text-align: center;
-  background: url("../../../public/pricingBanner.jpg") center;
-  background-blend-mode: hue;
+  background: url("../../../public/images/Banners/pricingBanner.jpg") center;
   background-size: cover;
 }
 

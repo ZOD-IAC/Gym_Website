@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "@/styles/Navigation/Navigation.module.css";
 import Link from "next/link";
 import Image from "next/image";

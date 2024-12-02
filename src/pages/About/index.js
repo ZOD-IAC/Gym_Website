@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "@/styles/AboutPage/AboutPage.module.css";
 import IndexAbout from "@/Component/About/IndexAbout";
 import Pricing from "@/Component/About/Pricing";
 import FAQs from "@/Component/About/FAQs";
 import ImageGallery from "@/Component/Gallery/ImageGallery";
 import FitnessCalculatorBanner from "@/Component/Banner/FitnessCalculatorBanner";
-import { Dumble } from "@/svg/Dumble";
 
-function index() {
+function About() {
+  const ref = useRef();
+  const handleClick = () => {
+    if (ref) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className={styles.container}>
       <div className={styles.banner}>
@@ -18,10 +23,12 @@ function index() {
             fitness, expert guidance, and a supportive community dedicated to
             your success
           </p>
-          <button className={styles.ctaButton}>Start Reading</button>
+          <button className={styles.ctaButton} onClick={handleClick}>
+            Start Reading
+          </button>
         </div>
       </div>
-      <div>
+      <div ref={ref}>
         <IndexAbout />
       </div>
       <div>
@@ -116,4 +123,4 @@ function index() {
   );
 }
 
-export default index;
+export default About;

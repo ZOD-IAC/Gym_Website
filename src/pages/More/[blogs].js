@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import styles from "@/styles/BlogSlugPage/BlogSlugPage.module.css";
-import sampleImage from "../../../public/bbgIAmge3.jpg";
+import sampleImage from "../../../public/images/Banners/bbgIAmge.jpg";
 import Image from "next/image";
+import Loader from "@/Component/Transitioin/Loader";
 
 const Blogs = () => {
   const router = useRouter().query;
-  const [data, setData] = useState([]);
+  const [data, setData] = useState();
 
   useEffect(() => {
     if (router.blogs !== "undefined") {
@@ -15,11 +16,17 @@ const Blogs = () => {
           `http://localhost:3000/api/data?title=${router.blogs}`
         );
         const result = await res.json();
-        setData(result);
+        setInterval(() => {
+          setData(result);
+        }, 2000);
       };
       fetchData();
     }
   }, [router]);
+
+  if (!data) {
+    return <Loader />;
+  }
 
   return (
     <div className={styles.blogContainer}>

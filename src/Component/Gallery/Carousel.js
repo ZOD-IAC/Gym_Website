@@ -1,19 +1,24 @@
 import React, { useRef, useState } from "react";
 import styles from "@/styles/ImageGallery/ImageGallery.module.css";
 import Image from "next/image";
-import { Dumble } from "@/svg/Dumble";
 
 const initialImages = [
-  "/carousel/img1.jpg",
-  "/carousel/img2.jpg",
-  "/carousel/img3.jpg",
-  "/carousel/img4.jpg",
-  "/carousel/img5.jpg",
-  "/carousel/img6.jpg",
-  "/carousel/img7.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0001.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0002.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0003.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0004.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0005.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0006.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0007.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0008.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0009.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0010.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0011.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0012.jpg",
+  "/images/ImageGallery/IMG-20241202-WA0013.jpg",
 ];
+
 function Carousel() {
-  // const [image, setImages] = useState(initialImages);
   const ref = useRef();
   const itemWidth = 300;
   const padding = 10;
@@ -55,13 +60,11 @@ function Carousel() {
         </div>
       </div>
       <div className={styles.TextContent}>
-        <h2>Heading</h2>
+        <h2>Explore Our Fitness Space</h2>
         <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using Content here, content here, making it
-          look like readable
+          Take a closer look at the vibrant and welcoming environment of our
+          gym. From state-of-the-art equipment to comfortable amenities, we
+          ensure your fitness journey is both productive and enjoyable.
         </p>
       </div>
     </div>

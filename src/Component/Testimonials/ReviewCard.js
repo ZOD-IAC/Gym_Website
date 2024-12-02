@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/styles/Testimonisals/Testimonisals.module.css";
 import Image from "next/image";
-import sample from "../../../public/bbgIAmge.jpg";
+import sample from "../../../public/images/Banners/bbgIAmge.jpg";
 
 function ReviewCard({ name, content, image }) {
   return (

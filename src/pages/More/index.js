@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "@/styles/MorePage/MorePage.module.css";
 import Image from "next/image";
-import sampleImage from "../../../public/bbgIAmge.jpg";
+import sampleImage from "../../../public/images/Banners/bbgIAmge.jpg";
 import FitnessCalculator from "@/Component/OtherComponents/FitnessCalculator";
 import Link from "next/link";
 import blogs from "../Data/blog.json";
@@ -60,6 +60,7 @@ const content = [
 ];
 
 function More() {
+  const ref = useRef();
   const [data, setData] = useState();
   const [hide, SetHide] = useState(true);
 
@@ -73,6 +74,12 @@ function More() {
     fetchData();
   }, [hide]);
 
+  const handleClick = () => {
+    if (ref) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.banner}>
@@ -82,10 +89,12 @@ function More() {
             Discover expert tips, workout routines, nutrition advice and success
             stories to help you achieve your fitness goals
           </p>
-          <button className={styles.ctaButton}>Start Reading</button>
+          <button className={styles.ctaButton} onClick={handleClick}>
+            Start Reading
+          </button>
         </div>
       </div>
-      <div className={styles.ExaConWrapper}>
+      <div className={styles.ExaConWrapper} ref={ref}>
         <h2 className={styles.blogTitle}>Some Common Things to Remember</h2>
         <div className={styles.ExtraContent}>
           {content.map((ele, idx) => {
