@@ -6,14 +6,33 @@ const FAQs = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.faq_section}>
-        <h2 className={styles.faq_title}>Frequently Asked Questions</h2>
+        <h2 className={styles.faq_title}>Frequently Asked Questions (FAQs)</h2>
         <div className={styles.faq_list}>
+          <div className={styles.faq_item}>
+            <h3 className={styles.faq_question}>
+              What is the Fitness Calculator?
+            </h3>
+            <p className={styles.faq_answer}>
+              Our fitness calculator includes tools to calculate your BMI, daily
+              calorie needs, and body fat percentage.
+            </p>
+          </div>
+          <div className={styles.faq_item}>
+            <h3 className={styles.faq_question}>
+              How accurate are the calculations?
+            </h3>
+            <p className={styles.faq_answer}>
+              While our calculators provide good estimates, we recommend
+              consulting with a fitness professional or doctor for personalized
+              advice.
+            </p>
+          </div>
           <div className={styles.faq_item}>
             <h3 className={styles.faq_question}>
               What are your opening hours?
             </h3>
             <p className={styles.faq_answer}>
-              We are open from 6am to 10pm every day.
+              We are open from 6am to 12pm every day.
             </p>
           </div>
           <div className={styles.faq_item}>
@@ -21,23 +40,7 @@ const FAQs = () => {
               Do you offer personal training?
             </h3>
             <p className={styles.faq_answer}>
-              Yes, we have certified personal trainers available.
-            </p>
-          </div>
-          <div className={styles.faq_item}>
-            <h3 className={styles.faq_question}>
-              Can I bring a friend to the gym?
-            </h3>
-            <p className={styles.faq_answer}>
-              Yes, we offer guest passes for a small fee.
-            </p>
-          </div>
-          <div className={styles.faq_item}>
-            <h3 className={styles.faq_question}>
-              Can I bring a friend to the gym?
-            </h3>
-            <p className={styles.faq_answer}>
-              Yes, we offer guest passes for a small fee.
+              Yes, we have certified personal trainer available.
             </p>
           </div>
         </div>

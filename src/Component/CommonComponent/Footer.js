@@ -9,7 +9,7 @@ function Footer() {
     <div className={styles.FootContatiner}>
       <div className={styles.logo}>
         <Image src={favicon} alt="logo" width={30} height={30} />
-        <h2>Zodiac</h2>
+        <h2>BodyMechanix</h2>
       </div>
       <div className={styles.option}>
         <label>Quick links</label>

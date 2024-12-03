@@ -13,10 +13,10 @@ const Blogs = () => {
     if (router.blogs !== "undefined") {
       const fetchData = async () => {
         const res = await fetch(
-          `http://localhost:3000/api/data?title=${router.blogs}`
+          `${process.env.NEXT_PUBLIC_API_URL}/api/data?title=${router.blogs}`
         );
         const result = await res.json();
-        setInterval(() => {
+        setTimeout(() => {
           setData(result);
         }, 2000);
       };

@@ -19,7 +19,7 @@
 
 .Container ul li {
   cursor: pointer;
-  background: rgba(128, 128, 128, 0);
+  /* background: rgba(128, 128, 128, 0); */
   font-size: 1rem;
   text-align: center;
   padding: 1rem 2rem;

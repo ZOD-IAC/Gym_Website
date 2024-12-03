@@ -84,7 +84,7 @@ function ImageGallery() {
     gsap.to(".modal-backdrop", { opacity: 1, duration: 0.5 });
   };
 
-  const closeModal = () => {
+  const closeModal = (e) => {
     gsap.to(".modal-image", {
       opacity: 0,
       scale: 0.8,

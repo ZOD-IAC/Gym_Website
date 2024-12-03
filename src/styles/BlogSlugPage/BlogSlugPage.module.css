@@ -60,7 +60,7 @@
 @media (max-width: 768px) {
   .blogWrapper {
     flex-direction: column;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
   .imageContainer {
     width: 100%;

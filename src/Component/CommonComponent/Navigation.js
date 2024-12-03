@@ -41,7 +41,7 @@ function Navigation() {
       </div>
       <div className={styles.logo}>
         <Link href="/">
-          <h2>Zodiac</h2>
+          <h2>BodyMechanix</h2>
         </Link>
         <label onClick={() => setShow((prev) => !prev)}>&#x2630;</label>
       </div>

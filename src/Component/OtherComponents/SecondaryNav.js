@@ -84,11 +84,36 @@ function SecondaryNav() {
     <>
       <div className={`${styles.Container}`}>
         <ul>
-          <li onClick={() => setData("shoulder")}>Shoulder</li>
-          <li onClick={() => setData("chest")}>Chest</li>
-          <li onClick={() => setData("thighs")}>thighs</li>
-          <li onClick={() => setData("biceps")}>biceps</li>
-          <li onClick={() => setData("legs")}>legs</li>
+          <li
+            onClick={() => setData("shoulder")}
+            className={`${data === "shoulder" ? "bg-[#fca311]" : ""}`}
+          >
+            Shoulder
+          </li>
+          <li
+            onClick={() => setData("chest")}
+            className={`${data === "chest" ? "bg-[#fca311]" : ""}`}
+          >
+            Chest
+          </li>
+          <li
+            onClick={() => setData("thighs")}
+            className={`${data === "thighs" ? "bg-[#fca311]" : ""}`}
+          >
+            thighs
+          </li>
+          <li
+            onClick={() => setData("biceps")}
+            className={`${data === "biceps" ? "bg-[#fca311]" : ""}`}
+          >
+            biceps
+          </li>
+          <li
+            onClick={() => setData("legs")}
+            className={`${data === "legs" ? "bg-[#fca311]" : ""}`}
+          >
+            legs
+          </li>
         </ul>
         <div>
           {passData.map((ele, idx) => {
