@@ -25,7 +25,7 @@ export default function Home() {
           <span>#fitness</span>
           <span>#gymmotivation</span>
           <span>#workout</span>
-          <span> #healthylifestyle </span>
+          <span>#healthylifestyle </span>
         </p>
       </div>
       <div>

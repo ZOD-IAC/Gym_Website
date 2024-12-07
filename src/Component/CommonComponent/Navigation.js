@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styles from "@/styles/Navigation/Navigation.module.css";
 import Link from "next/link";
-import Image from "next/image";
-import LOGO from "../../../public/logo.png";
+// import Image from "next/image";
+import logo from "../../../public/bodyLogo.jpg";
 
 function Navigation() {
   const [show, setShow] = useState(false);
@@ -37,12 +37,19 @@ function Navigation() {
         </ul>
       </div>
       <div className={styles.login}>
-        <Image src={LOGO} width={90} height={90} alt="Logo" />
-      </div>
-      <div className={styles.logo}>
+        {/* <Image
+          src={logo}
+          width={60}
+          height={60}
+          sizes="150px"
+          alt="Logo"
+          className="rounded-full"
+        /> */}
         <Link href="/">
           <h2>BodyMechanix</h2>
         </Link>
+      </div>
+      <div className={styles.logo}>
         <label onClick={() => setShow((prev) => !prev)}>&#x2630;</label>
       </div>
     </div>

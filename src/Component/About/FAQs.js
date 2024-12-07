@@ -32,7 +32,8 @@ const FAQs = () => {
               What are your opening hours?
             </h3>
             <p className={styles.faq_answer}>
-              We are open from 6am to 12pm every day.
+              We are open from 5:30 am to 12pm and 5:00 pm to 10:00 pm every
+              day.
             </p>
           </div>
           <div className={styles.faq_item}>

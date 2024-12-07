@@ -11,16 +11,23 @@
   z-index: 9999;
 }
 
+.login a {
+  font-size: 2rem;
+  margin: 0 1rem;
+  font-weight: 500;
+  color: #fca311;
+}
 .logo {
   display: flex;
   justify-content: space-around;
   gap: 10px;
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0 1rem;
   font-weight: 500;
 }
 .logo label {
   cursor: pointer;
+
   font-weight: 900;
 }
 .logo h2 {

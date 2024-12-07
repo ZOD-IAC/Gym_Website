@@ -7,7 +7,7 @@ function ReviewCard({ name, content, image }) {
   return (
     <div className={styles.card}>
       <Image
-        src={sample}
+        src={image ? image : sample}
         alt={name}
         width="150"
         height={"150"}

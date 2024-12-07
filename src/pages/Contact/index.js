@@ -60,9 +60,9 @@ function Contact() {
             </div>
 
             <div className={styles.infoItem}>
-              <h3>Hours</h3>
-              <p>Monday - Friday: 6am - 12pm</p>
-              <p>Saturday - Sunday: 5am - 10pm</p>
+              <h3> Gym Hours</h3>
+              <p>Morning : 5:30 am - 12:00 pm</p>
+              <p>Evening : 5:00 pm - 10:00 pm</p>
             </div>
           </div>
 
